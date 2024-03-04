@@ -7,6 +7,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Services\MarkdownToHtml\MarkdownToHtml-01-Dest.html" />
+    <None Remove="Services\MarkdownToHtml\MarkdownToHtml-01-Source.md" />
+    <None Remove="Services\MarkdownToHtml\MarkdownToHtml-Emoticons-Dest.html" />
+    <None Remove="Services\MarkdownToHtml\MarkdownToHtml-Emoticons-Source.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Services\MarkdownToHtml\MarkdownToHtml-Emoticons-Dest.html">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services\MarkdownToHtml\MarkdownToHtml-01-Dest.html">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services\MarkdownToHtml\MarkdownToHtml-01-Source.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services\MarkdownToHtml\MarkdownToHtml-Emoticons-Source.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+    <PackageReference Include="NUnit" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\MailsSender.Core\MailsSender.Core.csproj" />
   </ItemGroup>
 
