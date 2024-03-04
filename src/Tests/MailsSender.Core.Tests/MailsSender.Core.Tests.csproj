@@ -37,4 +37,14 @@
     <ProjectReference Include="..\..\MailsSender.Core\MailsSender.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\ExcelRecipients\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Services\ExcelRecipients\ExcelRecipients-01.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

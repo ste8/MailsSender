@@ -54,7 +54,8 @@ namespace MailsSender.Core.Services
             var recipient = new MailAddress(mailInfo.Recipient.MailAddress);
             var message = new MailMessage(from, recipient) {
                 Subject = mailInfo.Subject,
-                Body = mailInfo.BodyAsHtml
+                Body = mailInfo.BodyAsHtml,
+                IsBodyHtml = true
             };
 
             AddAttachments(mailInfo, message);

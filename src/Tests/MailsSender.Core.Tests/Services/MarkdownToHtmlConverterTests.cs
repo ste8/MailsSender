@@ -1,5 +1,5 @@
-﻿using MailsSender.Core.Services;
-using MailsSender.Core.Tests.Helpers;
+﻿using MailsSender.Core.Helpers;
+using MailsSender.Core.Services;
 using NUnit.Framework;
 
 namespace MailsSender.Core.Tests.Services

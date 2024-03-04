@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using System.Text;
 
-namespace MailsSender.Core.Tests.Helpers
+namespace MailsSender.Core.Helpers
 {
     public class EmbeddedResourcesReader
     {
